@@ -1,0 +1,357 @@
+.
+├── Dockerfile
+├── bin
+│   ├── messaging
+│   ├── nlu
+│   └── studio
+├── bindings
+│   └── linux
+│       └── default
+│           └── node_sqlite3.node
+├── botpress.faylsystem.txt
+├── bp
+├── config
+├── data
+│   ├── assets
+│   │   ├── admin
+│   │   │   └── ui
+│   │   │       └── public
+│   │   │           ├── asset-manifest.json
+│   │   │           ├── favicon.ico
+│   │   │           ├── fonts
+│   │   │           │   ├── font-roboto.css
+│   │   │           │   └── font_roboto
+│   │   │           │       ├── roboto.woff2
+│   │   │           │       └── roboto500.woff2
+│   │   │           ├── index.html
+│   │   │           ├── manifest.json
+│   │   │           └── static
+│   │   │               ├── css
+│   │   │               │   ├── 2.560f8d28.chunk.css
+│   │   │               │   ├── 2.560f8d28.chunk.css.map
+│   │   │               │   ├── main.1862636c.chunk.css
+│   │   │               │   └── main.1862636c.chunk.css.map
+│   │   │               ├── js
+│   │   │               │   ├── 2.d0431968.chunk.js
+│   │   │               │   ├── 2.d0431968.chunk.js.LICENSE.txt
+│   │   │               │   ├── 3.31c9838e.chunk.js
+│   │   │               │   ├── 4.e5883504.chunk.js
+│   │   │               │   ├── main.b47c5f96.chunk.js
+│   │   │               │   ├── main.b47c5f96.chunk.js.LICENSE.txt
+│   │   │               │   └── runtime-main.bf701c29.js
+│   │   │               └── media
+│   │   │                   ├── ar.64188f1f.svg
+│   │   │                   ├── de.7e82f4c7.svg
+│   │   │                   ├── en.a3e6d90f.svg
+│   │   │                   ├── es.039cad8d.svg
+│   │   │                   ├── fr.81d43a15.svg
+│   │   │                   ├── he.c8a44024.svg
+│   │   │                   ├── hi.e5926cb7.svg
+│   │   │                   ├── it.290f2fec.svg
+│   │   │                   ├── ja.1ca5a40c.svg
+│   │   │                   ├── ko.e3fda633.svg
+│   │   │                   ├── linux.09fc32f1.png
+│   │   │                   ├── loading-circle.cbac0c6a.svg
+│   │   │                   ├── logo-icon.ef699423.svg
+│   │   │                   ├── missing.bb1790e0.svg
+│   │   │                   ├── nl.62f69d3c.svg
+│   │   │                   ├── pl.0882b3e3.svg
+│   │   │                   ├── pt.5995e84f.svg
+│   │   │                   ├── ru.b4132869.svg
+│   │   │                   └── zh.7977e12a.svg
+│   │   ├── modules
+│   │   │   ├── analytics
+│   │   │   │   ├── config.schema.json
+│   │   │   │   └── web
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       └── lite.bundle.js
+│   │   │   ├── basic-skills
+│   │   │   │   ├── config.schema.json
+│   │   │   │   └── web
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       └── lite.bundle.js
+│   │   │   ├── builtin
+│   │   │   │   ├── config.schema.json
+│   │   │   │   └── web
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       └── lite.bundle.js
+│   │   │   ├── channel-web
+│   │   │   │   ├── config.schema.json
+│   │   │   │   ├── default-emulator.css
+│   │   │   │   ├── default.css
+│   │   │   │   ├── examples
+│   │   │   │   │   ├── custom-theme.css
+│   │   │   │   │   ├── embedded-webchat.html
+│   │   │   │   │   └── parent.css
+│   │   │   │   ├── font.css
+│   │   │   │   ├── fonts
+│   │   │   │   │   ├── roboto.woff2
+│   │   │   │   │   ├── roboto500.woff2
+│   │   │   │   │   ├── slick.eot
+│   │   │   │   │   ├── slick.svg
+│   │   │   │   │   ├── slick.ttf
+│   │   │   │   │   └── slick.woff
+│   │   │   │   ├── images
+│   │   │   │   │   ├── background_1.png
+│   │   │   │   │   ├── emulator-default.svg
+│   │   │   │   │   └── external_icon.png
+│   │   │   │   ├── inject.css
+│   │   │   │   ├── inject.js
+│   │   │   │   ├── notification.mp3
+│   │   │   │   ├── object_assign.js
+│   │   │   │   ├── slick
+│   │   │   │   │   ├── slick-theme.css
+│   │   │   │   │   └── slick.css
+│   │   │   │   └── web
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       └── lite.bundle.js
+│   │   │   ├── code-editor
+│   │   │   │   ├── config.schema.json
+│   │   │   │   └── web
+│   │   │   │       ├── 1.full.bundle.js
+│   │   │   │       ├── 2.full.bundle.js
+│   │   │   │       ├── 3.full.bundle.js
+│   │   │   │       ├── 4.full.bundle.js
+│   │   │   │       ├── bda2dba51e7287ea093d42aafcc37986.ttf
+│   │   │   │       ├── editor.worker.js
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       ├── json.worker.js
+│   │   │   │       ├── lite.bundle.js
+│   │   │   │       └── ts.worker.js
+│   │   │   ├── examples
+│   │   │   │   ├── config.schema.json
+│   │   │   │   └── web
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       └── lite.bundle.js
+│   │   │   ├── hitlnext
+│   │   │   │   ├── config.schema.json
+│   │   │   │   ├── web
+│   │   │   │   │   ├── full.bundle.js
+│   │   │   │   │   └── lite.bundle.js
+│   │   │   │   └── webchat-theme.css
+│   │   │   ├── misunderstood
+│   │   │   │   ├── admin_icon.svg
+│   │   │   │   ├── config.schema.json
+│   │   │   │   ├── studio_icon.svg
+│   │   │   │   └── web
+│   │   │   │       ├── full.bundle.js
+│   │   │   │       └── lite.bundle.js
+│   │   │   └── nlu
+│   │   │       ├── config.schema.json
+│   │   │       └── web
+│   │   │           ├── full.bundle.js
+│   │   │           └── lite.bundle.js
+│   │   ├── studio
+│   │   │   └── ui
+│   │   │       └── public
+│   │   │           ├── audio
+│   │   │           │   └── notification.mp3
+│   │   │           ├── external
+│   │   │           │   ├── bootstrap.min.css
+│   │   │           │   ├── font-lato.css
+│   │   │           │   ├── font-roboto.css
+│   │   │           │   ├── font_lato
+│   │   │           │   │   ├── S6u9w4BMUTPHh50XSwaPGR_p.woff2
+│   │   │           │   │   ├── S6u9w4BMUTPHh50XSwiPGQ.woff2
+│   │   │           │   │   ├── S6u9w4BMUTPHh6UVSwaPGR_p.woff2
+│   │   │           │   │   ├── S6u9w4BMUTPHh6UVSwiPGQ.woff2
+│   │   │           │   │   ├── S6u9w4BMUTPHh7USSwaPGR_p.woff2
+│   │   │           │   │   ├── S6u9w4BMUTPHh7USSwiPGQ.woff2
+│   │   │           │   │   ├── S6uyw4BMUTPHjx4wXg.woff2
+│   │   │           │   │   └── S6uyw4BMUTPHjxAwXjeu.woff2
+│   │   │           │   ├── font_roboto
+│   │   │           │   │   ├── roboto.woff2
+│   │   │           │   │   └── roboto500.woff2
+│   │   │           │   ├── material-icons.css
+│   │   │           │   └── material-icons.woff2
+│   │   │           ├── fonts
+│   │   │           │   ├── ar.svg
+│   │   │           │   ├── de.svg
+│   │   │           │   ├── en.svg
+│   │   │           │   ├── es.svg
+│   │   │           │   ├── fr.svg
+│   │   │           │   ├── glyphicons-halflings-regular.eot
+│   │   │           │   ├── glyphicons-halflings-regular.svg
+│   │   │           │   ├── glyphicons-halflings-regular.ttf
+│   │   │           │   ├── glyphicons-halflings-regular.woff
+│   │   │           │   ├── glyphicons-halflings-regular.woff2
+│   │   │           │   ├── he.svg
+│   │   │           │   ├── hi.svg
+│   │   │           │   ├── it.svg
+│   │   │           │   ├── ja.svg
+│   │   │           │   ├── ko.svg
+│   │   │           │   ├── missing.svg
+│   │   │           │   ├── nl.svg
+│   │   │           │   ├── pl.svg
+│   │   │           │   ├── pt.svg
+│   │   │           │   ├── ru.svg
+│   │   │           │   └── zh.svg
+│   │   │           ├── img
+│   │   │           │   ├── empty-state.svg
+│   │   │           │   ├── favicon-32x32.png
+│   │   │           │   ├── favicon.ico
+│   │   │           │   ├── favicon.png
+│   │   │           │   ├── flags
+│   │   │           │   │   ├── ar.svg
+│   │   │           │   │   ├── de.svg
+│   │   │           │   │   ├── en.svg
+│   │   │           │   │   ├── es.svg
+│   │   │           │   │   ├── fr.svg
+│   │   │           │   │   ├── he.svg
+│   │   │           │   │   ├── hi.svg
+│   │   │           │   │   ├── it.svg
+│   │   │           │   │   ├── ja.svg
+│   │   │           │   │   ├── ko.svg
+│   │   │           │   │   ├── missing.svg
+│   │   │           │   │   ├── nl.svg
+│   │   │           │   │   ├── pl.svg
+│   │   │           │   │   ├── pt.svg
+│   │   │           │   │   ├── ru.svg
+│   │   │           │   │   └── zh.svg
+│   │   │           │   ├── grid.png
+│   │   │           │   ├── logo-icon.svg
+│   │   │           │   ├── logo_grey.png
+│   │   │           │   └── logo_white.png
+│   │   │           ├── index.html
+│   │   │           └── js
+│   │   │               ├── web.efc8ee34e39d4db32980.js
+│   │   │               ├── web.efc8ee34e39d4db32980.js.LICENSE.txt
+│   │   │               └── web.efc8ee34e39d4db32980.js.map
+│   │   └── ui-lite
+│   │       └── public
+│   │           ├── index.html
+│   │           └── js
+│   │               └── main.7bd40986ad6c17f182a2.js
+│   ├── bot.config.schema.json
+│   ├── botpress.config.schema.json
+│   ├── global
+│   │   ├── actions
+│   │   │   ├── analytics
+│   │   │   │   └── set.js
+│   │   │   ├── basic-skills
+│   │   │   │   ├── call_api.js
+│   │   │   │   ├── choice_invalid_answer.js
+│   │   │   │   ├── choice_parse_answer.js
+│   │   │   │   ├── send_email.js
+│   │   │   │   ├── slot_fill.js
+│   │   │   │   ├── slot_not_found.js
+│   │   │   │   ├── slot_reset.js
+│   │   │   │   └── slot_update_contexts.js
+│   │   │   ├── builtin
+│   │   │   │   ├── README.js
+│   │   │   │   ├── appendContext.js
+│   │   │   │   ├── getGlobalVariable.js
+│   │   │   │   ├── getNumberOfConversations.js
+│   │   │   │   ├── incrementNumberOfConversations.js
+│   │   │   │   ├── removeContext.js
+│   │   │   │   ├── removeVariable.js
+│   │   │   │   ├── resetContext.js
+│   │   │   │   ├── resetGlobalVariable.js
+│   │   │   │   ├── resetSession.js
+│   │   │   │   ├── sendFeedback.js
+│   │   │   │   ├── setGlobalVariable.js
+│   │   │   │   ├── setVariable.js
+│   │   │   │   ├── storeFileLocally.js
+│   │   │   │   ├── switchLanguage.js
+│   │   │   │   └── wait.js
+│   │   │   ├── channel-web
+│   │   │   │   └── sendDataToChat.js
+│   │   │   ├── hitlnext
+│   │   │   │   ├── check_agents.js
+│   │   │   │   └── handoff.js
+│   │   │   └── misunderstood
+│   │   │       └── flag.js
+│   │   ├── botpress.config.json
+│   │   ├── config
+│   │   │   ├── analytics.json
+│   │   │   ├── basic-skills.json
+│   │   │   ├── builtin.json
+│   │   │   ├── channel-web.json
+│   │   │   ├── code-editor.json
+│   │   │   ├── examples.json
+│   │   │   ├── hitlnext.json
+│   │   │   ├── misunderstood.json
+│   │   │   └── nlu.json
+│   │   ├── content-types
+│   │   │   └── builtin
+│   │   │       ├── _base.js
+│   │   │       ├── _utils.js
+│   │   │       ├── action_button.js
+│   │   │       ├── audio.js
+│   │   │       ├── card.js
+│   │   │       ├── carousel.js
+│   │   │       ├── dropdown.js
+│   │   │       ├── file.js
+│   │   │       ├── image.js
+│   │   │       ├── location.js
+│   │   │       ├── single_choice.js
+│   │   │       ├── text.js
+│   │   │       └── video.js
+│   │   ├── examples
+│   │   │   └── examples
+│   │   │       ├── actions
+│   │   │       │   └── call_external_api.js
+│   │   │       └── hooks
+│   │   │           ├── after_incoming_middleware
+│   │   │           │   ├── 02_set_session_reference.js
+│   │   │           │   └── 03_switch_language.js
+│   │   │           ├── after_server_start
+│   │   │           │   └── expose_private_api.js
+│   │   │           ├── after_stage_changed
+│   │   │           │   └── stage_changed.js
+│   │   │           ├── before_bot_import
+│   │   │           │   └── import_validations.js
+│   │   │           ├── before_incoming_middleware
+│   │   │           │   └── 06_rasa_nlu.js
+│   │   │           └── on_stage_request
+│   │   │               ├── pipeline_approval.js
+│   │   │               └── stage_requested.js
+│   │   ├── hooks
+│   │   │   ├── after_bot_mount
+│   │   │   │   └── builtin
+│   │   │   │       └── 00_create_shortlink.js
+│   │   │   ├── after_bot_unmount
+│   │   │   │   └── builtin
+│   │   │   │       └── 00_delete_shortlink.js
+│   │   │   ├── after_incoming_middleware
+│   │   │   │   ├── basic-skills
+│   │   │   │   │   └── 05_extract_slots.js
+│   │   │   │   ├── builtin
+│   │   │   │   │   ├── 00_dialog_engine.js
+│   │   │   │   │   └── 01_expire_nlu_contexts.js
+│   │   │   │   ├── channel-web
+│   │   │   │   │   └── 00_dialog_engine.js
+│   │   │   │   └── misunderstood
+│   │   │   │       └── 00_misunderstood_flag.js
+│   │   │   ├── before_incoming_middleware
+│   │   │   │   ├── builtin
+│   │   │   │   │   └── apply_nlu_contexts.js
+│   │   │   │   └── channel-web
+│   │   │   │       └── 00_user_attributes.js
+│   │   │   └── on_stage_request
+│   │   │       └── builtin
+│   │   │           └── stage-reviewers-approve.js
+│   │   └── workspaces.json
+│   ├── locks
+│   └── storage
+│       └── core.sqlite
+├── duckling
+├── log
+│   ├── access.log
+│   └── error.log
+└── modules
+    ├── analytics.tgz
+    ├── basic-skills.tgz
+    ├── broadcast.tgz
+    ├── builtin.tgz
+    ├── channel-web.tgz
+    ├── code-editor.tgz
+    ├── examples.tgz
+    ├── google-speech.tgz
+    ├── hitl.tgz
+    ├── hitlnext.tgz
+    ├── misunderstood.tgz
+    ├── nlu.tgz
+    └── uipath.tgz
+
+93 directories, 261 files
