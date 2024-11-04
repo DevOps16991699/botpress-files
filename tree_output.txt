@@ -1,0 +1,59 @@
+botpress/
+├── bots
+│   ├── bugbuster
+│   │   ├── bot.definition.ts
+│   │   ├── integrations.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @bpinternal
+│   │   │   │   └── genenv -> ../../../../node_modules/.pnpm/@bpinternal+genenv@0.0.1/node_modules/@bpinternal/genenv
+│   │   │   ├── execa -> ../../../node_modules/.pnpm/execa@8.0.1/node_modules/execa
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.0/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── bot.ts
+│   │   │   ├── handlers
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── issue-opened.ts
+│   │   │   │   ├── sync-issues.ts
+│   │   │   │   └── typings.ts
+│   │   │   ├── index.ts
+│   │   │   ├── listeners.ts
+│   │   │   └── list-issues.ts
+│   │   └── tsconfig.json
+│   ├── hello-world
+│   │   ├── bot.definition.ts
+│   │   ├── integrations.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── qs -> ../../../node_modules/.pnpm/qs@6.11.0/node_modules/qs
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── json-schema -> ../../../../node_modules/.pnpm/@types+json-schema@7.0.12/node_modules/@types/json-schema
+│   │   │   │   ├── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   │   └── qs -> ../../../../node_modules/.pnpm/@types+qs@6.9.7/node_modules/@types/qs
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── hit-looper
+│   │   ├── bot.definition.ts
+│   │   ├── integrations.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
