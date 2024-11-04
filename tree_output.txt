@@ -1,3 +1,4 @@
+shahzod@ubuntu:~$ cat tree_output.txt
 botpress/
 ├── bots
 │   ├── bugbuster
@@ -57,3 +58,2080 @@ botpress/
 │   │   │   ├── @botpress
 │   │   │   │   ├── client -> ../../../../packages/client
 │   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @bpinternal
+│   │   │   │   └── genenv -> ../../../../node_modules/.pnpm/@bpinternal+genenv@0.0.1/node_modules/@bpinternal/genenv
+│   │   │   ├── execa -> ../../../node_modules/.pnpm/execa@8.0.1/node_modules/execa
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.0/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   ├── src
+│   │   │   ├── api-utils.ts
+│   │   │   ├── bot.ts
+│   │   │   ├── flow-state.ts
+│   │   │   ├── index.ts
+│   │   │   ├── message-handler
+│   │   │   │   ├── from-agent.ts
+│   │   │   │   ├── from-patient.ts
+│   │   │   │   └── index.ts
+│   │   │   └── types.ts
+│   │   └── tsconfig.json
+│   ├── sheetzy
+│   │   ├── bot.definition.ts
+│   │   ├── integrations.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @bpinternal
+│   │   │   │   └── genenv -> ../../../../node_modules/.pnpm/@bpinternal+genenv@0.0.1/node_modules/@bpinternal/genenv
+│   │   │   ├── execa -> ../../../node_modules/.pnpm/execa@8.0.1/node_modules/execa
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   ├── src
+│   │   │   ├── bot.ts
+│   │   │   ├── commands.ts
+│   │   │   ├── index.ts
+│   │   │   ├── types.ts
+│   │   │   └── utils.ts
+│   │   └── tsconfig.json
+│   └── sinlin
+│       ├── bot.definition.ts
+│       ├── integrations.ts
+│       ├── node_modules
+│       │   ├── @botpress
+│       │   │   ├── cli -> ../../../../packages/cli
+│       │   │   ├── client -> ../../../../packages/client
+│       │   │   ├── common -> ../../../../packages/common
+│       │   │   └── sdk -> ../../../../packages/sdk
+│       │   ├── @bpinternal
+│       │   │   └── genenv -> ../../../../node_modules/.pnpm/@bpinternal+genenv@0.0.1/node_modules/@bpinternal/genenv
+│       │   ├── execa -> ../../../node_modules/.pnpm/execa@8.0.1/node_modules/execa
+│       │   ├── lodash -> ../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash
+│       │   ├── @types
+│       │   │   ├── lodash -> ../../../../node_modules/.pnpm/@types+lodash@4.14.195/node_modules/@types/lodash
+│       │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│       │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│       ├── package.json
+│       ├── src
+│       │   ├── bot.ts
+│       │   ├── event-emitter.ts
+│       │   ├── index.ts
+│       │   └── sync.ts
+│       └── tsconfig.json
+├── CODEOWNERS
+├── integrations
+│   ├── airtable
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── airtable -> ../../../node_modules/.pnpm/airtable@0.12.2/node_modules/airtable
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.7/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── create-record.ts
+│   │   │   │   ├── create-table.ts
+│   │   │   │   ├── get-table-records.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── update-record.ts
+│   │   │   │   └── update-table.ts
+│   │   │   ├── client.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── custom-schemas.ts
+│   │   │   │   ├── sub-schemas.ts
+│   │   │   │   └── types.ts
+│   │   │   └── utils.ts
+│   │   └── tsconfig.json
+│   ├── anthropic
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @anthropic-ai
+│   │   │   │   └── sdk -> ../../../../node_modules/.pnpm/@anthropic-ai+sdk@0.24.0/node_modules/@anthropic-ai/sdk
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   └── generate-content.ts
+│   │   │   ├── index.ts
+│   │   │   └── schemas.ts
+│   │   └── tsconfig.json
+│   ├── asana
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── asana -> ../../../node_modules/.pnpm/asana@1.0.2/node_modules/asana
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.0_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── asana -> ../../../../node_modules/.pnpm/@types+asana@0.18.12/node_modules/@types/asana
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.0/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── add-comment-to-task.ts
+│   │   │   │   ├── create-task.ts
+│   │   │   │   ├── find-user.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── update-task.ts
+│   │   │   ├── client
+│   │   │   │   └── index.ts
+│   │   │   ├── const.ts
+│   │   │   ├── definitions
+│   │   │   │   ├── actions.ts
+│   │   │   │   ├── channels.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── custom-schemas.ts
+│   │   │   │   ├── custom-types.ts
+│   │   │   │   ├── custom-uis.ts
+│   │   │   │   ├── sub-schemas
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── types.ts
+│   │   │   ├── setup
+│   │   │   │   ├── channels.ts
+│   │   │   │   ├── handler.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── register.ts
+│   │   │   │   └── unregister.ts
+│   │   │   └── utils
+│   │   │       └── index.ts
+│   │   └── tsconfig.json
+│   ├── browser
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.7.2/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── browse-pages.ts
+│   │   │   │   ├── capture-screenshot.ts
+│   │   │   │   └── web-search.ts
+│   │   │   ├── definitions
+│   │   │   │   └── actions.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── cerebras
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── openai -> ../../../node_modules/.pnpm/openai@4.53.0/node_modules/openai
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── schemas.ts
+│   │   └── tsconfig.json
+│   ├── charts
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.7.2/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── chart.js -> ../../../node_modules/.pnpm/chart.js@3.9.1/node_modules/chart.js
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── generate-bar-chart.ts
+│   │   │   │   ├── generate-bubble-chart.ts
+│   │   │   │   ├── generate-doughnut-chart.ts
+│   │   │   │   ├── generate-horizontal-bar-chart.ts
+│   │   │   │   ├── generate-line-plot.ts
+│   │   │   │   ├── generate-pie-chart.ts
+│   │   │   │   ├── generate-radar-chart.ts
+│   │   │   │   ├── generate-scatter-plot.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── utils.ts
+│   │   │   ├── definitions
+│   │   │   │   └── actions.ts
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── dalle
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.7/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── client.ts
+│   │   │   ├── index.ts
+│   │   │   ├── schemas.ts
+│   │   │   └── types.ts
+│   │   └── tsconfig.json
+│   ├── fireworks-ai
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── openai -> ../../../node_modules/.pnpm/openai@4.53.0/node_modules/openai
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── schemas.ts
+│   │   └── tsconfig.json
+│   ├── github
+│   │   ├── extract.vrl
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── fuse.js -> ../../../node_modules/.pnpm/fuse.js@6.6.2/node_modules/fuse.js
+│   │   │   ├── @octokit
+│   │   │   │   ├── webhooks-methods -> ../../../../node_modules/.pnpm/@octokit+webhooks-methods@3.0.3/node_modules/@octokit/webhooks-methods
+│   │   │   │   └── webhooks-types -> ../../../../node_modules/.pnpm/@octokit+webhooks-types@7.6.1/node_modules/@octokit/webhooks-types
+│   │   │   ├── octokit -> ../../../node_modules/.pnpm/octokit@2.0.19/node_modules/octokit
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── find-target.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── const.ts
+│   │   │   ├── definitions
+│   │   │   │   ├── actions.ts
+│   │   │   │   ├── channels.ts
+│   │   │   │   ├── entities.ts
+│   │   │   │   ├── events.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── zui.ts
+│   │   │   ├── events
+│   │   │   │   ├── discussion
+│   │   │   │   │   ├── discussion-comment-created.ts
+│   │   │   │   │   ├── discussion-comment-replied.ts
+│   │   │   │   │   ├── discussion-created.ts
+│   │   │   │   │   └── shared.ts
+│   │   │   │   ├── issue
+│   │   │   │   │   ├── issue-comment-created.ts
+│   │   │   │   │   ├── issue-opened.ts
+│   │   │   │   │   └── shared.ts
+│   │   │   │   └── pull-request
+│   │   │   │       ├── pull-request-comment-created.ts
+│   │   │   │       ├── pull-request-merged.ts
+│   │   │   │       ├── pull-request-opened.ts
+│   │   │   │       ├── pull-request-review-comment-created.ts
+│   │   │   │       ├── pull-request-review-comment-replied.ts
+│   │   │   │       ├── pull-request-review-submitted.ts
+│   │   │   │       └── shared.ts
+│   │   │   ├── handler.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── action-wrapper.ts
+│   │   │   │   ├── channel-wrapper.ts
+│   │   │   │   ├── entity-mapping.ts
+│   │   │   │   ├── error-handling.ts
+│   │   │   │   ├── event-wrapper.ts
+│   │   │   │   ├── github-client.ts
+│   │   │   │   ├── github-settings.ts
+│   │   │   │   ├── graphql-queries.ts
+│   │   │   │   ├── guards.ts
+│   │   │   │   ├── types.ts
+│   │   │   │   └── utils.ts
+│   │   │   └── setup.ts
+│   │   └── tsconfig.json
+│   ├── gmail
+│   │   ├── definitions
+│   │   │   ├── actions.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── configuration.ts
+│   │   │   ├── events.ts
+│   │   │   ├── index.ts
+│   │   │   ├── secrets.ts
+│   │   │   ├── states.ts
+│   │   │   └── user-tags.ts
+│   │   ├── extract.vrl
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── gmail-api-parse-message -> ../../../node_modules/.pnpm/gmail-api-parse-message@2.1.2/node_modules/gmail-api-parse-message
+│   │   │   ├── googleapis -> ../../../node_modules/.pnpm/googleapis@112.0.0/node_modules/googleapis
+│   │   │   ├── js-base64 -> ../../../node_modules/.pnpm/js-base64@3.7.5/node_modules/js-base64
+│   │   │   ├── node-html-parser -> ../../../node_modules/.pnpm/node-html-parser@6.1.13/node_modules/node-html-parser
+│   │   │   ├── nodemailer -> ../../../node_modules/.pnpm/nodemailer@6.9.3/node_modules/nodemailer
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── react -> ../../../node_modules/.pnpm/react@18.3.1/node_modules/react
+│   │   │   ├── react-dom -> ../../../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom
+│   │   │   ├── @react-email
+│   │   │   │   └── components -> ../../../../node_modules/.pnpm/@react-email+components@0.0.25_react-dom@18.3.1_react@18.3.1/node_modules/@react-email/components
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.19.50_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   │   ├── nodemailer -> ../../../../node_modules/.pnpm/@types+nodemailer@6.4.8/node_modules/@types/nodemailer
+│   │   │   │   ├── react -> ../../../../node_modules/.pnpm/@types+react@18.3.11/node_modules/@types/react
+│   │   │   │   └── react-dom -> ../../../../node_modules/.pnpm/@types+react-dom@18.3.1/node_modules/@types/react-dom
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   └── index.ts
+│   │   │   ├── channels
+│   │   │   │   ├── channels.ts
+│   │   │   │   ├── channel-wrapper.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── google-api
+│   │   │   │   ├── error-handling.ts
+│   │   │   │   ├── google-client.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── jwt-validation.ts
+│   │   │   │   └── types.d.ts
+│   │   │   ├── index.ts
+│   │   │   ├── setup.ts
+│   │   │   ├── utils
+│   │   │   │   ├── datetime-utils.ts
+│   │   │   │   ├── mail-composing.tsx
+│   │   │   │   └── string-utils.ts
+│   │   │   └── webhook-events
+│   │   │       ├── handler.ts
+│   │   │       ├── index.ts
+│   │   │       ├── new-mail.ts
+│   │   │       └── oauth-callback.ts
+│   │   └── tsconfig.json
+│   ├── googlecalendar
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── googleapis -> ../../../node_modules/.pnpm/googleapis@126.0.1/node_modules/googleapis
+│   │   │   ├── googleapis-common -> ../../../node_modules/.pnpm/googleapis-common@7.0.1/node_modules/googleapis-common
+│   │   │   ├── google-auth-library -> ../../../node_modules/.pnpm/google-auth-library@9.0.0/node_modules/google-auth-library
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── create-event.ts
+│   │   │   │   ├── delete-event.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── list-events.ts
+│   │   │   │   ├── sync
+│   │   │   │   │   ├── event-create.ts
+│   │   │   │   │   ├── event-delete.ts
+│   │   │   │   │   ├── event-list.ts
+│   │   │   │   │   ├── event-read.ts
+│   │   │   │   │   ├── event-update.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── update-event.ts
+│   │   │   ├── client.ts
+│   │   │   ├── const.ts
+│   │   │   ├── index.ts
+│   │   │   └── misc
+│   │   │       ├── custom-schemas.ts
+│   │   │       ├── custom-uis.ts
+│   │   │       ├── map-event.ts
+│   │   │       └── utils.ts
+│   │   └── tsconfig.json
+│   ├── groq
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── openai -> ../../../node_modules/.pnpm/openai@4.53.0/node_modules/openai
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── schemas.ts
+│   │   └── tsconfig.json
+│   ├── gsheets
+│   │   ├── definitions
+│   │   │   ├── actions.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── configuration.ts
+│   │   │   ├── events.ts
+│   │   │   ├── index.ts
+│   │   │   ├── secrets.ts
+│   │   │   ├── states.ts
+│   │   │   └── user-tags.ts
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── googleapis -> ../../../node_modules/.pnpm/googleapis@126.0.1/node_modules/googleapis
+│   │   │   ├── google-auth-library -> ../../../node_modules/.pnpm/google-auth-library@9.0.0/node_modules/google-auth-library
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.19.50_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── action-wrapper.ts
+│   │   │   │   ├── implementations
+│   │   │   │   │   ├── add-sheet.ts
+│   │   │   │   │   ├── append-values.ts
+│   │   │   │   │   ├── clear-values.ts
+│   │   │   │   │   ├── get-info-spread-sheet.ts
+│   │   │   │   │   ├── get-values.ts
+│   │   │   │   │   └── update-values.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── channels
+│   │   │   │   ├── index.ts
+│   │   │   │   └── publisher-dispatcher.ts
+│   │   │   ├── google-api
+│   │   │   │   ├── client.ts
+│   │   │   │   └── error-handling.ts
+│   │   │   ├── index.ts
+│   │   │   ├── setup.ts
+│   │   │   └── webhook-events
+│   │   │       ├── handler-dispatcher.ts
+│   │   │       └── index.ts
+│   │   └── tsconfig.json
+│   ├── instagram
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── messaging-api-messenger -> ../../../node_modules/.pnpm/messaging-api-messenger@1.1.0/node_modules/messaging-api-messenger
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── misc
+│   │   │       ├── incoming-message.ts
+│   │   │       ├── outgoing-message.ts
+│   │   │       ├── types.ts
+│   │   │       └── utils.ts
+│   │   └── tsconfig.json
+│   ├── intercom
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── intercom-client -> ../../../node_modules/.pnpm/intercom-client@4.0.0/node_modules/intercom-client
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── html.utils.ts
+│   │   │   ├── index.ts
+│   │   │   └── types.ts
+│   │   └── tsconfig.json
+│   ├── line
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── crypto -> ../../../node_modules/.pnpm/crypto@1.0.1/node_modules/crypto
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── @line
+│   │   │   │   └── bot-sdk -> ../../../../node_modules/.pnpm/@line+bot-sdk@7.5.2/node_modules/@line/bot-sdk
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── linear
+│   │   ├── definitions
+│   │   │   ├── actions.ts
+│   │   │   ├── events.ts
+│   │   │   ├── index.ts
+│   │   │   ├── schemas.ts
+│   │   │   └── states.ts
+│   │   ├── extract.vrl
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.3/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── @linear
+│   │   │   │   └── sdk -> ../../../../node_modules/.pnpm/@linear+sdk@2.6.0/node_modules/@linear/sdk
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── tsafe -> ../../../node_modules/.pnpm/tsafe@1.6.6/node_modules/tsafe
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── create-issue.ts
+│   │   │   │   ├── find-target.ts
+│   │   │   │   ├── get-issue.ts
+│   │   │   │   ├── get-user.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── list-issues.ts
+│   │   │   │   ├── list-teams.ts
+│   │   │   │   ├── list-users.ts
+│   │   │   │   ├── mark-as-duplicate.ts
+│   │   │   │   └── update-issue.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── events
+│   │   │   │   ├── issueCreated.ts
+│   │   │   │   └── issueUpdated.ts
+│   │   │   ├── handler.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── linear.ts
+│   │   │   │   ├── types.ts
+│   │   │   │   └── utils.ts
+│   │   │   └── setup.ts
+│   │   └── tsconfig.json
+│   ├── mailchimp
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @mailchimp
+│   │   │   │   └── mailchimp_marketing -> ../../../../node_modules/.pnpm/@mailchimp+mailchimp_marketing@3.0.80/node_modules/@mailchimp/mailchimp_marketing
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.0_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── mailchimp__mailchimp_marketing -> ../../../../node_modules/.pnpm/@types+mailchimp__mailchimp_marketing@3.0.10/node_modules/@types/mailchimp__mailchimp_marketing
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.0/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── add-customer-to-campaign.ts
+│   │   │   │   ├── add-customer-to-list.ts
+│   │   │   │   ├── get-all-campaigns.ts
+│   │   │   │   ├── get-all-lists.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── send-mass-email-campaign.ts
+│   │   │   ├── client
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── custom-schemas.ts
+│   │   │   │   ├── custom-types.ts
+│   │   │   │   ├── custom-uis.ts
+│   │   │   │   ├── sub-schemas.ts
+│   │   │   │   └── types.ts
+│   │   │   └── utils.ts
+│   │   └── tsconfig.json
+│   ├── make
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.7/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── messenger
+│   │   ├── extract.vrl
+│   │   ├── fallbackHandler.vrl
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.2/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── messaging-api-messenger -> ../../../node_modules/.pnpm/messaging-api-messenger@1.1.0/node_modules/messaging-api-messenger
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── preact -> ../../../node_modules/.pnpm/preact@10.23.1/node_modules/preact
+│   │   │   ├── preact-render-to-string -> ../../../node_modules/.pnpm/preact-render-to-string@6.5.7_preact@10.23.1/node_modules/preact-render-to-string
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── @slack
+│   │   │   │   └── web-api -> ../../../../node_modules/.pnpm/@slack+web-api@6.8.1/node_modules/@slack/web-api
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── misc
+│   │   │       ├── client.ts
+│   │   │       ├── html-utils.ts
+│   │   │       ├── incoming-message.ts
+│   │   │       ├── outgoing-message.ts
+│   │   │       ├── pages
+│   │   │       │   ├── button-dialog.tsx
+│   │   │       │   └── select-dialog.tsx
+│   │   │       ├── types.ts
+│   │   │       ├── utils.ts
+│   │   │       └── wizard.ts
+│   │   └── tsconfig.json
+│   ├── notion
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── @notionhq
+│   │   │   │   └── client -> ../../../../node_modules/.pnpm/@notionhq+client@2.2.7/node_modules/@notionhq/client
+│   │   │   ├── @tsconfig
+│   │   │   │   └── node18-strictest -> ../../../../node_modules/.pnpm/@tsconfig+node18-strictest@1.0.0/node_modules/@tsconfig/node18-strictest
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.0_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.0/node_modules/@types/node
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── vitest -> ../../../node_modules/.pnpm/vitest@0.33.0/node_modules/vitest
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── add-comment-to-discussion.ts
+│   │   │   │   ├── add-comment-to-page.ts
+│   │   │   │   ├── add-page-to-db.ts
+│   │   │   │   ├── delete-block.ts
+│   │   │   │   ├── get-db.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   └── notion
+│   │   │       ├── index.ts
+│   │   │       ├── notion.constants.ts
+│   │   │       ├── notion.ts
+│   │   │       └── notion.types.ts
+│   │   ├── tests
+│   │   │   ├── notion.mock.ts
+│   │   │   └── notion.test.ts
+│   │   └── tsconfig.json
+│   ├── openai
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── openai -> ../../../node_modules/.pnpm/openai@4.53.0/node_modules/openai
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── schemas.ts
+│   │   └── tsconfig.json
+│   ├── pdf-generator
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.7.2/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── marked -> ../../../node_modules/.pnpm/marked@13.0.2/node_modules/marked
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── pnpm-lock.yaml
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── util.ts
+│   │   └── tsconfig.json
+│   ├── slack
+│   │   ├── extract.vrl
+│   │   ├── fallbackHandler.vrl
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.4.0/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── fuse.js -> ../../../node_modules/.pnpm/fuse.js@6.6.2/node_modules/fuse.js
+│   │   │   ├── lodash -> ../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── @slack
+│   │   │   │   ├── types -> ../../../../node_modules/.pnpm/@slack+types@2.13.1/node_modules/@slack/types
+│   │   │   │   └── web-api -> ../../../../node_modules/.pnpm/@slack+web-api@6.8.1/node_modules/@slack/web-api
+│   │   │   ├── @types
+│   │   │   │   ├── lodash -> ../../../../node_modules/.pnpm/@types+lodash@4.14.195/node_modules/@types/lodash
+│   │   │   │   ├── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   │   └── verror -> ../../../../node_modules/.pnpm/@types+verror@1.10.6/node_modules/@types/verror
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── verror -> ../../../node_modules/.pnpm/verror@1.10.1/node_modules/verror
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── action-wrapper.ts
+│   │   │   │   ├── add-reaction.ts
+│   │   │   │   ├── find-target.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── list-users.ts
+│   │   │   │   ├── retreive-message.ts
+│   │   │   │   ├── start-dm.ts
+│   │   │   │   └── update-channel-topic.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── definitions
+│   │   │   │   ├── actions.ts
+│   │   │   │   ├── channels.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── schemas.ts
+│   │   │   │   └── tags.ts
+│   │   │   ├── events
+│   │   │   │   ├── member-joined-channel.ts
+│   │   │   │   ├── member-left-channel.ts
+│   │   │   │   ├── message-received.ts
+│   │   │   │   ├── reaction-added.ts
+│   │   │   │   ├── reaction-removed.ts
+│   │   │   │   └── team-join.ts
+│   │   │   ├── handler.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── renderer.ts
+│   │   │   │   ├── slack-scopes.ts
+│   │   │   │   ├── types.ts
+│   │   │   │   ├── utils.ts
+│   │   │   │   └── validateRequestSignature.test.ts
+│   │   │   └── setup.ts
+│   │   └── tsconfig.json
+│   ├── stripe
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── stripe -> ../../../node_modules/.pnpm/stripe@13.11.0/node_modules/stripe
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── create-customer.ts
+│   │   │   │   ├── create-or-retrieve-customer.ts
+│   │   │   │   ├── create-paymentlink.ts
+│   │   │   │   ├── create-subslink.ts
+│   │   │   │   ├── deactivate-paymentlink.ts
+│   │   │   │   ├── find-paymentlink.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── list-customers.ts
+│   │   │   │   ├── list-paymentlinks.ts
+│   │   │   │   ├── list-product-prices.ts
+│   │   │   │   ├── retrieve-customer.ts
+│   │   │   │   └── search-customers.ts
+│   │   │   ├── client.ts
+│   │   │   ├── events
+│   │   │   │   ├── charge-failed.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── invoice-payment-failed.ts
+│   │   │   │   ├── payment-intent-failed.ts
+│   │   │   │   ├── subscription-created.ts
+│   │   │   │   ├── subscription-deleted.ts
+│   │   │   │   └── subscription-updated.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── custom-schemas.ts
+│   │   │   │   ├── custom-types.ts
+│   │   │   │   └── types.ts
+│   │   │   └── setup
+│   │   │       ├── handler.ts
+│   │   │       ├── index.ts
+│   │   │       ├── register.ts
+│   │   │       └── unregister.ts
+│   │   └── tsconfig.json
+│   ├── sunco
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── sunshine-conversations-client -> ../../../node_modules/.pnpm/sunshine-conversations-client@9.14.0_@babel+core@7.22.5/node_modules/sunshine-conversations-client
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── teams
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.5.1/node_modules/axios
+│   │   │   ├── botbuilder -> ../../../node_modules/.pnpm/botbuilder@4.20.0/node_modules/botbuilder
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── jsonwebtoken -> ../../../node_modules/.pnpm/jsonwebtoken@9.0.2/node_modules/jsonwebtoken
+│   │   │   ├── jwks-rsa -> ../../../node_modules/.pnpm/jwks-rsa@3.1.0/node_modules/jwks-rsa
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── jsonwebtoken -> ../../../../node_modules/.pnpm/@types+jsonwebtoken@9.0.3/node_modules/@types/jsonwebtoken
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── channels.ts
+│   │   │   ├── definitions
+│   │   │   │   ├── index.ts
+│   │   │   │   └── states.ts
+│   │   │   ├── handler.ts
+│   │   │   ├── index.ts
+│   │   │   └── signature.ts
+│   │   └── tsconfig.json
+│   ├── telegram
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── lodash -> ../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   ├── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@sentry+node@7.53.1/node_modules/@sentry/node
+│   │   │   ├── telegraf -> ../../../node_modules/.pnpm/telegraf@4.16.3/node_modules/telegraf
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── lodash -> ../../../../node_modules/.pnpm/@types+lodash@4.14.195/node_modules/@types/lodash
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── misc
+│   │   │       ├── types.ts
+│   │   │       └── utils.ts
+│   │   └── tsconfig.json
+│   ├── todoist
+│   │   ├── extract.vrl
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── interfaces.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.7.4/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @doist
+│   │   │   │   └── todoist-api-typescript -> ../../../../node_modules/.pnpm/@doist+todoist-api-typescript@3.0.3_type-fest@4.26.1/node_modules/@doist/todoist-api-typescript
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@3.1.4/node_modules/nodemon
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@9.1.0/node_modules/query-string
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── verror -> ../../../node_modules/.pnpm/verror@1.10.1/node_modules/verror
+│   │   ├── package.json
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── actions.ts
+│   │   │   ├── auth.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── client.ts
+│   │   │   ├── config.ts
+│   │   │   ├── handler.ts
+│   │   │   ├── index.ts
+│   │   │   ├── setup.ts
+│   │   │   ├── types.ts
+│   │   │   └── utils.ts
+│   │   └── tsconfig.json
+│   ├── trello
+│   │   ├── definitions
+│   │   │   ├── actions.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── configuration.ts
+│   │   │   ├── events.ts
+│   │   │   ├── index.ts
+│   │   │   ├── schemas
+│   │   │   │   ├── actions
+│   │   │   │   │   ├── inputSchemas.ts
+│   │   │   │   │   └── outputSchemas.ts
+│   │   │   │   ├── configuration.ts
+│   │   │   │   ├── entities.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── states.ts
+│   │   │   │   └── webhookEvents.ts
+│   │   │   ├── states.ts
+│   │   │   └── user.ts
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── eslint -> ../../../node_modules/.pnpm/eslint@8.57.1/node_modules/eslint
+│   │   │   ├── eslint-config-prettier -> ../../../node_modules/.pnpm/eslint-config-prettier@8.10.0_eslint@8.57.1/node_modules/eslint-config-prettier
+│   │   │   ├── eslint-plugin-import -> ../../../node_modules/.pnpm/eslint-plugin-import@2.30.0_@typescript-eslint+parser@5.62.0_eslint@8.57.1/node_modules/eslint-plugin-import
+│   │   │   ├── eslint-plugin-jsdoc -> ../../../node_modules/.pnpm/eslint-plugin-jsdoc@39.9.1_eslint@8.57.1/node_modules/eslint-plugin-jsdoc
+│   │   │   ├── eslint-plugin-prettier -> ../../../node_modules/.pnpm/eslint-plugin-prettier@4.2.1_eslint-config-prettier@8.10.0_eslint@8.57.1_prettier@2.8.8/node_modules/eslint-plugin-prettier
+│   │   │   ├── eslint-plugin-unused-imports -> ../../../node_modules/.pnpm/eslint-plugin-unused-imports@2.0.0_@typescript-eslint+eslint-plugin@5.62.0_eslint@8.57.1/node_modules/eslint-plugin-unused-imports
+│   │   │   ├── prettier -> ../../../node_modules/.pnpm/prettier@2.8.8/node_modules/prettier
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.36.1/node_modules/@sentry/cli
+│   │   │   ├── trello.js -> ../../../node_modules/.pnpm/trello.js@1.2.7/node_modules/trello.js
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.50_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── @typescript-eslint
+│   │   │       ├── eslint-plugin -> ../../../../node_modules/.pnpm/@typescript-eslint+eslint-plugin@5.62.0_@typescript-eslint+parser@5.62.0_eslint@8.57.1_typescript@4.9.5/node_modules/@typescript-eslint/eslint-plugin
+│   │   │       └── parser -> ../../../../node_modules/.pnpm/@typescript-eslint+parser@5.62.0_eslint@8.57.1_typescript@4.9.5/node_modules/@typescript-eslint/parser
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── addCardComment.ts
+│   │   │   │   ├── createCard.ts
+│   │   │   │   ├── getAllBoardMembers.ts
+│   │   │   │   ├── getAllBoards.ts
+│   │   │   │   ├── getBoardById.ts
+│   │   │   │   ├── getBoardMembersByDisplayName.ts
+│   │   │   │   ├── getBoardsByDisplayName.ts
+│   │   │   │   ├── getCardById.ts
+│   │   │   │   ├── getCardsByDisplayName.ts
+│   │   │   │   ├── getCardsInList.ts
+│   │   │   │   ├── getListById.ts
+│   │   │   │   ├── getListsByDisplayName.ts
+│   │   │   │   ├── getListsInBoard.ts
+│   │   │   │   ├── getMemberByIdOrUsername.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── moveCardDown.ts
+│   │   │   │   ├── moveCardToList.ts
+│   │   │   │   ├── moveCardUp.ts
+│   │   │   │   └── updateCard.ts
+│   │   │   ├── channels
+│   │   │   │   └── cardComments
+│   │   │   │       └── text.ts
+│   │   │   ├── errors
+│   │   │   │   └── trelloOperationError.ts
+│   │   │   ├── index.ts
+│   │   │   ├── repositories
+│   │   │   │   ├── baseRepository.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── trelloBoardRepository.ts
+│   │   │   │   ├── trelloCardCommentRepository.ts
+│   │   │   │   ├── trelloCardRepository.ts
+│   │   │   │   ├── trelloListRepository.ts
+│   │   │   │   ├── trelloMemberRepository.ts
+│   │   │   │   └── trelloWebhookRepository.ts
+│   │   │   ├── services
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── servicesContainer.ts
+│   │   │   │   ├── trelloBoardQueryService.ts
+│   │   │   │   ├── trelloCardQueryService.ts
+│   │   │   │   ├── trelloCardUpdateService.ts
+│   │   │   │   └── trelloListQueryService.ts
+│   │   │   ├── tsconfig.json
+│   │   │   ├── utils.ts
+│   │   │   ├── webhookCardCommentConsumer.ts
+│   │   │   ├── webhookEventConsumer.ts
+│   │   │   └── webhookLifecycleManager.ts
+│   │   └── tsconfig.json
+│   ├── twilio
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── twilio -> ../../../node_modules/.pnpm/twilio@3.84.1/node_modules/twilio
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.ts
+│   │   │   └── types.ts
+│   │   └── tsconfig.json
+│   ├── viber
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.4.0/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── vonage
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@0.27.2/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── webchat
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── local
+│   │   │   ├── env.sh
+│   │   │   ├── env.ts
+│   │   │   ├── messaging_helpers.ts
+│   │   │   ├── test_create_client.ts
+│   │   │   ├── test_send_message.ts
+│   │   │   └── test_sync.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── messaging-client -> ../../../../node_modules/.pnpm/@botpress+messaging-client@1.2.1/node_modules/@botpress/messaging-client
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── actions
+│   │   │   │   ├── get-user-data.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── webchat-events.ts
+│   │   │   ├── channels.ts
+│   │   │   ├── const.ts
+│   │   │   ├── definitions
+│   │   │   │   ├── actions.ts
+│   │   │   │   ├── channels.ts
+│   │   │   │   ├── events.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   └── schemas.ts
+│   │   │   ├── events
+│   │   │   │   ├── conversation-started.ts
+│   │   │   │   └── trigger.ts
+│   │   │   ├── handler.ts
+│   │   │   ├── index.ts
+│   │   │   ├── misc
+│   │   │   │   ├── messaging
+│   │   │   │   │   ├── bridge.ts
+│   │   │   │   │   ├── content-types.ts
+│   │   │   │   │   ├── incoming-event.ts
+│   │   │   │   │   ├── outgoing-message.ts
+│   │   │   │   │   └── triggers.ts
+│   │   │   │   ├── types.ts
+│   │   │   │   └── utils.ts
+│   │   │   └── setup.ts
+│   │   ├── tsconfig.json
+│   │   └── webchat.html
+│   ├── webhook
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.4.0/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── qs -> ../../../node_modules/.pnpm/qs@6.11.0/node_modules/qs
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   │   └── qs -> ../../../../node_modules/.pnpm/@types+qs@6.9.7/node_modules/@types/qs
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.ts
+│   │   └── tsconfig.json
+│   ├── whatsapp
+│   │   ├── extract.vrl
+│   │   ├── fallbackHandler.vrl
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── linkTemplate.vrl
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.8/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── preact -> ../../../node_modules/.pnpm/preact@10.23.1/node_modules/preact
+│   │   │   ├── preact-render-to-string -> ../../../node_modules/.pnpm/preact-render-to-string@6.5.7_preact@10.23.1/node_modules/preact-render-to-string
+│   │   │   ├── query-string -> ../../../node_modules/.pnpm/query-string@6.14.1/node_modules/query-string
+│   │   │   ├── @segment
+│   │   │   │   └── analytics-node -> ../../../../node_modules/.pnpm/@segment+analytics-node@2.2.0/node_modules/@segment/analytics-node
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── whatsapp-api-js -> ../../../node_modules/.pnpm/whatsapp-api-js@1.0.5/node_modules/whatsapp-api-js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── conversation.ts
+│   │   │   ├── incoming-message.ts
+│   │   │   ├── index.ts
+│   │   │   ├── interactive
+│   │   │   │   ├── body.ts
+│   │   │   │   ├── button.ts
+│   │   │   │   └── footer.ts
+│   │   │   ├── message-types
+│   │   │   │   ├── card.ts
+│   │   │   │   ├── carousel.ts
+│   │   │   │   ├── choice.ts
+│   │   │   │   └── dropdown.ts
+│   │   │   ├── misc
+│   │   │   │   ├── check-manual-config.ts
+│   │   │   │   ├── html-utils.ts
+│   │   │   │   ├── pages
+│   │   │   │   │   ├── button-dialog.tsx
+│   │   │   │   │   └── select-dialog.tsx
+│   │   │   │   ├── whatsapp.ts
+│   │   │   │   └── wizard.ts
+│   │   │   ├── outgoing-message.ts
+│   │   │   ├── tracking.ts
+│   │   │   ├── types.ts
+│   │   │   ├── util.ts
+│   │   │   └── whatsapp-types.ts
+│   │   └── tsconfig.json
+│   ├── zapier
+│   │   ├── hub.md
+│   │   ├── icon.svg
+│   │   ├── integration.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.3/node_modules/axios
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── client -> ../../../../packages/client
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   ├── sdk -> ../../../../packages/sdk
+│   │   │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── jest -> ../../../node_modules/.pnpm/jest@29.5.0_@types+node@18.16.16_ts-node@10.9.1/node_modules/jest
+│   │   │   ├── nodemon -> ../../../node_modules/.pnpm/nodemon@2.0.22/node_modules/nodemon
+│   │   │   ├── @sentry
+│   │   │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│   │   │   ├── ts-jest -> ../../../node_modules/.pnpm/ts-jest@29.1.0_@babel+core@7.22.5_esbuild@0.15.18_jest@29.5.0_typescript@4.9.5/node_modules/ts-jest
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── jest -> ../../../../node_modules/.pnpm/@types+jest@29.5.2/node_modules/@types/jest
+│   │   │   │   ├── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   │   └── uuid -> ../../../../node_modules/.pnpm/@types+uuid@9.0.1/node_modules/@types/uuid
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── uuid -> ../../../node_modules/.pnpm/uuid@9.0.0/node_modules/uuid
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── helpers.ts
+│   │   │   ├── index.ts
+│   │   │   ├── start.ts
+│   │   │   └── types.ts
+│   │   └── tsconfig.json
+│   └── zendesk
+│       ├── hub.md
+│       ├── icon.svg
+│       ├── integration.definition.ts
+│       ├── interfaces.ts
+│       ├── node_modules
+│       │   ├── axios -> ../../../node_modules/.pnpm/axios@1.4.0/node_modules/axios
+│       │   ├── axios-retry -> ../../../node_modules/.pnpm/axios-retry@4.5.0_axios@1.4.0/node_modules/axios-retry
+│       │   ├── @botpress
+│       │   │   ├── cli -> ../../../../packages/cli
+│       │   │   ├── client -> ../../../../packages/client
+│       │   │   ├── common -> ../../../../packages/common
+│       │   │   ├── sdk -> ../../../../packages/sdk
+│       │   │   └── sdk-addons -> ../../../../packages/sdk-addons
+│       │   ├── lodash -> ../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash
+│       │   ├── @sentry
+│       │   │   └── cli -> ../../../../node_modules/.pnpm/@sentry+cli@2.18.1/node_modules/@sentry/cli
+│       │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.0_typescript@4.9.5/node_modules/ts-node
+│       │   ├── @types
+│       │   │   ├── lodash -> ../../../../node_modules/.pnpm/@types+lodash@4.14.195/node_modules/@types/lodash
+│       │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.0/node_modules/@types/node
+│       │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│       ├── package.json
+│       ├── src
+│       │   ├── actions
+│       │   │   ├── call-api.ts
+│       │   │   ├── close-ticket.ts
+│       │   │   ├── create-ticket.ts
+│       │   │   ├── create-user.ts
+│       │   │   ├── find-customer.ts
+│       │   │   ├── get-ticket.ts
+│       │   │   ├── hitl.ts
+│       │   │   ├── index.ts
+│       │   │   ├── list-agents.ts
+│       │   │   └── sync-kb.ts
+│       │   ├── channels.ts
+│       │   ├── client.ts
+│       │   ├── definitions
+│       │   │   ├── actions.ts
+│       │   │   ├── channels.ts
+│       │   │   ├── index.ts
+│       │   │   └── schemas.ts
+│       │   ├── events
+│       │   │   ├── article-published.ts
+│       │   │   ├── article-unpublished.ts
+│       │   │   ├── ticket-assigned.ts
+│       │   │   └── ticket-solved.ts
+│       │   ├── handler.ts
+│       │   ├── index.ts
+│       │   ├── misc
+│       │   │   ├── axios-utils.ts
+│       │   │   ├── upload-articles-to-kb.ts
+│       │   │   └── utils.ts
+│       │   ├── setup.ts
+│       │   ├── triggers.ts
+│       │   └── webhookEvents.ts
+│       └── tsconfig.json
+├── interfaces
+│   ├── creatable
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── deletable
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── hitl
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── listable
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── llm
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── readable
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── speech-to-text
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── text-to-image
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   ├── common -> ../../../../packages/common
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.50/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── typing-indicator
+│   │   ├── interface.definition.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── cli -> ../../../../packages/cli
+│   │   │   │   └── sdk -> ../../../../packages/sdk
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   └── updatable
+│       ├── interface.definition.ts
+│       ├── node_modules
+│       │   ├── @botpress
+│       │   │   ├── cli -> ../../../../packages/cli
+│       │   │   └── sdk -> ../../../../packages/sdk
+│       │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│       ├── package.json
+│       └── tsconfig.json
+├── LICENSE
+├── node_modules
+│   ├── @botpress
+│   │   ├── cli -> ../../packages/cli
+│   │   └── sdk -> ../../packages/sdk
+│   ├── @bpinternal
+│   │   └── depsynky -> ../.pnpm/@bpinternal+depsynky@0.0.1/node_modules/@bpinternal/depsynky
+│   ├── @eslint
+│   │   ├── eslintrc -> ../.pnpm/@eslint+eslintrc@2.0.3/node_modules/@eslint/eslintrc
+│   │   └── js -> ../.pnpm/@eslint+js@8.41.0/node_modules/@eslint/js
+│   ├── eslint -> .pnpm/eslint@8.41.0/node_modules/eslint
+│   ├── @eslint-community
+│   │   ├── eslint-utils -> ../.pnpm/@eslint-community+eslint-utils@4.4.0_eslint@8.41.0/node_modules/@eslint-community/eslint-utils
+│   │   └── regexpp -> ../.pnpm/@eslint-community+regexpp@4.5.1/node_modules/@eslint-community/regexpp
+│   ├── eslint-config-prettier -> .pnpm/eslint-config-prettier@8.8.0_eslint@8.41.0/node_modules/eslint-config-prettier
+│   ├── eslint-import-resolver-node -> .pnpm/eslint-import-resolver-node@0.3.7/node_modules/eslint-import-resolver-node
+│   ├── eslint-module-utils -> .pnpm/eslint-module-utils@2.8.0_@typescript-eslint+parser@5.59.8_eslint-import-resolver-node@0.3.7_eslint@8.41.0/node_modules/eslint-module-utils
+│   ├── eslint-plugin-import -> .pnpm/eslint-plugin-import@2.27.5_@typescript-eslint+parser@5.59.8_eslint@8.41.0/node_modules/eslint-plugin-import
+│   ├── eslint-plugin-jsdoc -> .pnpm/eslint-plugin-jsdoc@39.9.1_eslint@8.41.0/node_modules/eslint-plugin-jsdoc
+│   ├── eslint-plugin-prettier -> .pnpm/eslint-plugin-prettier@4.2.1_eslint-config-prettier@8.8.0_eslint@8.41.0_prettier@2.8.8/node_modules/eslint-plugin-prettier
+│   ├── eslint-plugin-unused-imports -> .pnpm/eslint-plugin-unused-imports@2.0.0_@typescript-eslint+eslint-plugin@5.59.8_eslint@8.41.0/node_modules/eslint-plugin-unused-imports
+│   ├── eslint-rule-composer -> .pnpm/eslint-rule-composer@0.3.0/node_modules/eslint-rule-composer
+│   ├── eslint-scope -> .pnpm/eslint-scope@7.2.0/node_modules/eslint-scope
+│   ├── eslint-visitor-keys -> .pnpm/eslint-visitor-keys@3.4.1/node_modules/eslint-visitor-keys
+│   ├── prettier -> .pnpm/prettier@2.8.8/node_modules/prettier
+│   ├── prettier-linter-helpers -> .pnpm/prettier-linter-helpers@1.0.0/node_modules/prettier-linter-helpers
+│   ├── retry-cli -> .pnpm/retry-cli@0.7.0/node_modules/retry-cli
+│   ├── ts-node -> .pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   ├── turbo -> .pnpm/turbo@1.13.3/node_modules/turbo
+│   ├── @types
+│   │   ├── node -> ../.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   └── prettier -> ../.pnpm/@types+prettier@2.7.3/node_modules/@types/prettier
+│   ├── typescript -> .pnpm/typescript@4.9.5/node_modules/typescript
+│   ├── @typescript-eslint
+│   │   ├── eslint-plugin -> ../.pnpm/@typescript-eslint+eslint-plugin@5.59.8_@typescript-eslint+parser@5.59.8_eslint@8.41.0_typescript@4.9.5/node_modules/@typescript-eslint/eslint-plugin
+│   │   ├── parser -> ../.pnpm/@typescript-eslint+parser@5.59.8_eslint@8.41.0_typescript@4.9.5/node_modules/@typescript-eslint/parser
+│   │   ├── scope-manager -> ../.pnpm/@typescript-eslint+scope-manager@5.59.8/node_modules/@typescript-eslint/scope-manager
+│   │   ├── types -> ../.pnpm/@typescript-eslint+types@5.59.8/node_modules/@typescript-eslint/types
+│   │   ├── typescript-estree -> ../.pnpm/@typescript-eslint+typescript-estree@5.59.8_typescript@4.9.5/node_modules/@typescript-eslint/typescript-estree
+│   │   ├── type-utils -> ../.pnpm/@typescript-eslint+type-utils@5.59.8_eslint@8.41.0_typescript@4.9.5/node_modules/@typescript-eslint/type-utils
+│   │   ├── utils -> ../.pnpm/@typescript-eslint+utils@5.59.8_eslint@8.41.0_typescript@4.9.5/node_modules/@typescript-eslint/utils
+│   │   └── visitor-keys -> ../.pnpm/@typescript-eslint+visitor-keys@5.59.8/node_modules/@typescript-eslint/visitor-keys
+│   └── vitest -> .pnpm/vitest@2.1.4_@types+node@18.16.16/node_modules/vitest
+├── package.json
+├── packages
+│   ├── cli
+│   │   ├── bin.js
+│   │   ├── build.ts
+│   │   ├── e2e
+│   │   │   ├── api.ts
+│   │   │   ├── defaults.ts
+│   │   │   ├── index.ts
+│   │   │   ├── tests
+│   │   │   │   ├── create-deploy-bot.ts
+│   │   │   │   ├── create-deploy-integration.ts
+│   │   │   │   ├── dev-bot.ts
+│   │   │   │   ├── install-package.ts
+│   │   │   │   ├── integration-secrets.ts
+│   │   │   │   └── manage-workspace-handle.ts
+│   │   │   ├── typings.ts
+│   │   │   └── utils.ts
+│   │   ├── init.js
+│   │   ├── node_modules
+│   │   │   ├── @apidevtools
+│   │   │   │   └── json-schema-ref-parser -> ../../../../node_modules/.pnpm/@apidevtools+json-schema-ref-parser@11.7.0/node_modules/@apidevtools/json-schema-ref-parser
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.4.0/node_modules/axios
+│   │   │   ├── bluebird -> ../../../node_modules/.pnpm/bluebird@3.7.2/node_modules/bluebird
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../client
+│   │   │   │   └── sdk -> ../../../sdk
+│   │   │   ├── boxen -> ../../../node_modules/.pnpm/boxen@5.1.2/node_modules/boxen
+│   │   │   ├── @bpinternal
+│   │   │   │   ├── const -> ../../../../node_modules/.pnpm/@bpinternal+const@0.0.20/node_modules/@bpinternal/const
+│   │   │   │   ├── log4bot -> ../../../../node_modules/.pnpm/@bpinternal+log4bot@0.0.4/node_modules/@bpinternal/log4bot
+│   │   │   │   ├── tunnel -> ../../../../node_modules/.pnpm/@bpinternal+tunnel@0.1.1/node_modules/@bpinternal/tunnel
+│   │   │   │   └── yargs-extra -> ../../../../node_modules/.pnpm/@bpinternal+yargs-extra@0.0.3/node_modules/@bpinternal/yargs-extra
+│   │   │   ├── chalk -> ../../../node_modules/.pnpm/chalk@4.1.2/node_modules/chalk
+│   │   │   ├── chokidar -> ../../../node_modules/.pnpm/chokidar@3.5.3/node_modules/chokidar
+│   │   │   ├── dotenv -> ../../../node_modules/.pnpm/dotenv@16.4.4/node_modules/dotenv
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.15.18/node_modules/esbuild
+│   │   │   ├── find-process -> ../../../node_modules/.pnpm/find-process@1.4.7/node_modules/find-process
+│   │   │   ├── glob -> ../../../node_modules/.pnpm/glob@9.3.5/node_modules/glob
+│   │   │   ├── handlebars -> ../../../node_modules/.pnpm/handlebars@4.7.8/node_modules/handlebars
+│   │   │   ├── latest-version -> ../../../node_modules/.pnpm/latest-version@5.1.0/node_modules/latest-version
+│   │   │   ├── lodash -> ../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash
+│   │   │   ├── @parcel
+│   │   │   │   └── watcher -> ../../../../node_modules/.pnpm/@parcel+watcher@2.1.0/node_modules/@parcel/watcher
+│   │   │   ├── prettier -> ../../../node_modules/.pnpm/prettier@2.8.8/node_modules/prettier
+│   │   │   ├── prompts -> ../../../node_modules/.pnpm/prompts@2.4.2/node_modules/prompts
+│   │   │   ├── radash -> ../../../node_modules/.pnpm/radash@9.5.0/node_modules/radash
+│   │   │   ├── semver -> ../../../node_modules/.pnpm/semver@7.5.1/node_modules/semver
+│   │   │   ├── @stoplight
+│   │   │   │   ├── spectral-core -> ../../../../node_modules/.pnpm/@stoplight+spectral-core@1.19.1/node_modules/@stoplight/spectral-core
+│   │   │   │   ├── spectral-functions -> ../../../../node_modules/.pnpm/@stoplight+spectral-functions@1.9.0/node_modules/@stoplight/spectral-functions
+│   │   │   │   └── spectral-parsers -> ../../../../node_modules/.pnpm/@stoplight+spectral-parsers@1.0.4/node_modules/@stoplight/spectral-parsers
+│   │   │   ├── tmp -> ../../../node_modules/.pnpm/tmp@0.2.1/node_modules/tmp
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── @types
+│   │   │   │   ├── bluebird -> ../../../../node_modules/.pnpm/@types+bluebird@3.5.38/node_modules/@types/bluebird
+│   │   │   │   ├── json-schema -> ../../../../node_modules/.pnpm/@types+json-schema@7.0.12/node_modules/@types/json-schema
+│   │   │   │   ├── lodash -> ../../../../node_modules/.pnpm/@types+lodash@4.14.195/node_modules/@types/lodash
+│   │   │   │   ├── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   │   ├── prompts -> ../../../../node_modules/.pnpm/@types+prompts@2.4.4/node_modules/@types/prompts
+│   │   │   │   ├── semver -> ../../../../node_modules/.pnpm/@types+semver@7.5.0/node_modules/@types/semver
+│   │   │   │   ├── tmp -> ../../../../node_modules/.pnpm/@types+tmp@0.2.3/node_modules/@types/tmp
+│   │   │   │   ├── uuid -> ../../../../node_modules/.pnpm/@types+uuid@9.0.1/node_modules/@types/uuid
+│   │   │   │   └── verror -> ../../../../node_modules/.pnpm/@types+verror@1.10.6/node_modules/@types/verror
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   ├── uuid -> ../../../node_modules/.pnpm/uuid@9.0.0/node_modules/uuid
+│   │   │   ├── verror -> ../../../node_modules/.pnpm/verror@1.10.1/node_modules/verror
+│   │   │   └── winston -> ../../../node_modules/.pnpm/winston@3.9.0/node_modules/winston
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   ├── src
+│   │   │   ├── api
+│   │   │   │   ├── bot-body.ts
+│   │   │   │   ├── client.ts
+│   │   │   │   ├── find-previous-version.test.ts
+│   │   │   │   ├── find-previous-version.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── integration-body.ts
+│   │   │   │   ├── interface-body.ts
+│   │   │   │   ├── paging.ts
+│   │   │   │   └── types.ts
+│   │   │   ├── code-generation
+│   │   │   │   ├── bot-implementation
+│   │   │   │   │   ├── bot-implementation.ts
+│   │   │   │   │   ├── bot-typings
+│   │   │   │   │   │   ├── events-module.ts
+│   │   │   │   │   │   ├── index.ts
+│   │   │   │   │   │   └── states-module.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── consts.ts
+│   │   │   │   ├── generators.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── integration-implementation
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── integration-implementation.ts
+│   │   │   │   │   ├── integration-secret.ts
+│   │   │   │   │   └── integration-typings
+│   │   │   │   │       ├── actions-module.ts
+│   │   │   │   │       ├── channels-module.ts
+│   │   │   │   │       ├── configuration-module.ts
+│   │   │   │   │       ├── configurations-module.ts
+│   │   │   │   │       ├── entities-module.ts
+│   │   │   │   │       ├── events-module.ts
+│   │   │   │   │       ├── index.ts
+│   │   │   │   │       └── states-module.ts
+│   │   │   │   ├── integration-package
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── integration-package-definition
+│   │   │   │   │       ├── actions-module.ts
+│   │   │   │   │       ├── channels-module.ts
+│   │   │   │   │       ├── configuration-module.ts
+│   │   │   │   │       ├── configurations-module.ts
+│   │   │   │   │       ├── entities-module.ts
+│   │   │   │   │       ├── events-module.ts
+│   │   │   │   │       ├── index.ts
+│   │   │   │   │       ├── states-module.ts
+│   │   │   │   │       └── typings.ts
+│   │   │   │   ├── interface-package
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── interface-package-definition
+│   │   │   │   │       ├── actions-module.ts
+│   │   │   │   │       ├── channels-module.ts
+│   │   │   │   │       ├── entities-module.ts
+│   │   │   │   │       ├── events-module.ts
+│   │   │   │   │       ├── index.ts
+│   │   │   │   │       └── typings.ts
+│   │   │   │   ├── module.ts
+│   │   │   │   ├── strings.ts
+│   │   │   │   └── typings.ts
+│   │   │   ├── command-definitions.ts
+│   │   │   ├── command-implementations
+│   │   │   │   ├── add-command.ts
+│   │   │   │   ├── base-command.ts
+│   │   │   │   ├── bot-commands.ts
+│   │   │   │   ├── build-command.ts
+│   │   │   │   ├── bundle-command.ts
+│   │   │   │   ├── deploy-command.ts
+│   │   │   │   ├── dev-command.ts
+│   │   │   │   ├── gen-command.ts
+│   │   │   │   ├── global-command.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── init-command.ts
+│   │   │   │   ├── integration-commands.ts
+│   │   │   │   ├── interface-commands.ts
+│   │   │   │   ├── lint-command.ts
+│   │   │   │   ├── login-command.ts
+│   │   │   │   ├── logout-command.ts
+│   │   │   │   ├── project-command.ts
+│   │   │   │   ├── read-command.ts
+│   │   │   │   └── serve-command.ts
+│   │   │   ├── command-tree.ts
+│   │   │   ├── config.ts
+│   │   │   ├── consts.ts
+│   │   │   ├── errors.ts
+│   │   │   ├── index.ts
+│   │   │   ├── init.ts
+│   │   │   ├── linter
+│   │   │   │   ├── base-linter.test.ts
+│   │   │   │   ├── base-linter.ts
+│   │   │   │   ├── bot-linter.ts
+│   │   │   │   ├── integration-linter.ts
+│   │   │   │   ├── interface-linter.ts
+│   │   │   │   ├── rulesets
+│   │   │   │   │   ├── bot.ruleset.ts
+│   │   │   │   │   ├── integration.ruleset.ts
+│   │   │   │   │   └── interface.ruleset.ts
+│   │   │   │   ├── ruleset-tests
+│   │   │   │   │   ├── bot.ruleset.test.ts
+│   │   │   │   │   ├── common.ts
+│   │   │   │   │   ├── integration.ruleset.test.ts
+│   │   │   │   │   └── interface.ruleset.test.ts
+│   │   │   │   └── spectral-functions.ts
+│   │   │   ├── logger
+│   │   │   │   ├── base-logger.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── package-ref.test.ts
+│   │   │   ├── package-ref.ts
+│   │   │   ├── register-yargs.ts
+│   │   │   ├── root.ts
+│   │   │   ├── sdk
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── resolve-bot-interfaces.ts
+│   │   │   │   ├── resolve-integration-interfaces.ts
+│   │   │   │   └── validate-integration.ts
+│   │   │   ├── typings.ts
+│   │   │   ├── utils
+│   │   │   │   ├── cache-utils.ts
+│   │   │   │   ├── case-utils.test.ts
+│   │   │   │   ├── case-utils.ts
+│   │   │   │   ├── esbuild-utils.ts
+│   │   │   │   ├── event-emitter.ts
+│   │   │   │   ├── file-watcher.ts
+│   │   │   │   ├── guard-utils.ts
+│   │   │   │   ├── id-utils.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── path-utils.test.ts
+│   │   │   │   ├── path-utils.ts
+│   │   │   │   ├── pkgjson-utils.ts
+│   │   │   │   ├── promise-utils.test.ts
+│   │   │   │   ├── promise-utils.ts
+│   │   │   │   ├── prompt-utils.ts
+│   │   │   │   ├── record-utils.test.ts
+│   │   │   │   ├── record-utils.ts
+│   │   │   │   ├── require-utils.test.ts
+│   │   │   │   ├── require-utils.ts
+│   │   │   │   ├── schema-utils.test.ts
+│   │   │   │   ├── schema-utils.ts
+│   │   │   │   ├── semver-utils.ts
+│   │   │   │   ├── string-utils.ts
+│   │   │   │   ├── template-utils.ts
+│   │   │   │   ├── tunnel-utils.ts
+│   │   │   │   ├── type-utils.ts
+│   │   │   │   └── url-utils.ts
+│   │   │   └── worker
+│   │   │       ├── child-entrypoint.ts
+│   │   │       ├── child-wrapper.ts
+│   │   │       ├── config.ts
+│   │   │       ├── index.ts
+│   │   │       ├── is-child.ts
+│   │   │       ├── worker-state.ts
+│   │   │       └── worker.ts
+│   │   ├── templates
+│   │   │   ├── empty-bot
+│   │   │   │   ├── bot.definition.ts
+│   │   │   │   ├── node_modules
+│   │   │   │   │   ├── @botpress
+│   │   │   │   │   │   ├── client -> ../../../../../client
+│   │   │   │   │   │   └── sdk -> ../../../../../sdk
+│   │   │   │   │   ├── ts-node -> ../../../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   │   │   ├── @types
+│   │   │   │   │   │   └── node -> ../../../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   │   │   └── typescript -> ../../../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   │   ├── package.json
+│   │   │   │   ├── src
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── empty-integration
+│   │   │   │   ├── hub.md
+│   │   │   │   ├── icon.svg
+│   │   │   │   ├── integration.definition.ts
+│   │   │   │   ├── node_modules
+│   │   │   │   │   ├── @botpress
+│   │   │   │   │   │   ├── client -> ../../../../../client
+│   │   │   │   │   │   └── sdk -> ../../../../../sdk
+│   │   │   │   │   ├── ts-node -> ../../../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   │   │   ├── @types
+│   │   │   │   │   │   └── node -> ../../../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   │   │   └── typescript -> ../../../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   │   ├── package.json
+│   │   │   │   ├── src
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── tsconfig.json
+│   │   │   ├── hello-world
+│   │   │   │   ├── hub.md
+│   │   │   │   ├── icon.svg
+│   │   │   │   ├── integration.definition.ts
+│   │   │   │   ├── node_modules
+│   │   │   │   │   ├── @botpress
+│   │   │   │   │   │   ├── client -> ../../../../../client
+│   │   │   │   │   │   └── sdk -> ../../../../../sdk
+│   │   │   │   │   ├── ts-node -> ../../../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │   │   │   ├── @types
+│   │   │   │   │   │   └── node -> ../../../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   │   │   └── typescript -> ../../../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   │   ├── package.json
+│   │   │   │   ├── src
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── tsconfig.json
+│   │   │   └── webhook-message
+│   │   │       ├── hub.md
+│   │   │       ├── icon.svg
+│   │   │       ├── integration.definition.ts
+│   │   │       ├── node_modules
+│   │   │       │   ├── axios -> ../../../../../node_modules/.pnpm/axios@1.6.8/node_modules/axios
+│   │   │       │   ├── @botpress
+│   │   │       │   │   ├── client -> ../../../../../client
+│   │   │       │   │   └── sdk -> ../../../../../sdk
+│   │   │       │   ├── ts-node -> ../../../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.10_typescript@4.9.5/node_modules/ts-node
+│   │   │       │   ├── @types
+│   │   │       │   │   └── node -> ../../../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │       │   └── typescript -> ../../../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │       ├── package.json
+│   │   │       ├── src
+│   │   │       │   └── index.ts
+│   │   │       └── tsconfig.json
+│   │   └── tsconfig.json
+│   ├── client
+│   │   ├── build.ts
+│   │   ├── node_modules
+│   │   │   ├── axios -> ../../../node_modules/.pnpm/axios@1.6.1/node_modules/axios
+│   │   │   ├── axios-retry -> ../../../node_modules/.pnpm/axios-retry@4.5.0_axios@1.6.1/node_modules/axios-retry
+│   │   │   ├── @botpress
+│   │   │   │   └── api -> ../../../../node_modules/.pnpm/@botpress+api@0.47.0_openapi-types@12.1.3/node_modules/@botpress/api
+│   │   │   ├── browser-or-node -> ../../../node_modules/.pnpm/browser-or-node@2.1.1/node_modules/browser-or-node
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.16.17/node_modules/esbuild
+│   │   │   ├── lodash -> ../../../node_modules/.pnpm/lodash@4.17.21/node_modules/lodash
+│   │   │   ├── qs -> ../../../node_modules/.pnpm/qs@6.11.0/node_modules/qs
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.2_@types+node@18.19.50_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── tsup -> ../../../node_modules/.pnpm/tsup@8.0.2_ts-node@10.9.2_typescript@4.9.5/node_modules/tsup
+│   │   │   ├── type-fest -> ../../../node_modules/.pnpm/type-fest@3.11.1/node_modules/type-fest
+│   │   │   ├── @types
+│   │   │   │   └── qs -> ../../../../node_modules/.pnpm/@types+qs@6.9.7/node_modules/@types/qs
+│   │   │   ├── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   │   └── vitest -> ../../../node_modules/.pnpm/vitest@0.33.0/node_modules/vitest
+│   │   ├── openapi.ts
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   ├── src
+│   │   │   ├── client.ts
+│   │   │   ├── config.ts
+│   │   │   ├── errors.ts
+│   │   │   ├── index.ts
+│   │   │   ├── lister.ts
+│   │   │   └── types.ts
+│   │   ├── tests
+│   │   │   ├── e2e
+│   │   │   │   ├── consts.ts
+│   │   │   │   └── node.ts
+│   │   │   └── manual
+│   │   │       └── file-upload.test.ts
+│   │   └── tsconfig.json
+│   ├── common
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   ├── client -> ../../../client
+│   │   │   │   └── sdk -> ../../../sdk
+│   │   │   ├── openai -> ../../../node_modules/.pnpm/openai@4.53.0/node_modules/openai
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.19.10/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── error-handling
+│   │   │   │   ├── index.ts
+│   │   │   │   └── try-catch-wrapper.ts
+│   │   │   ├── index.ts
+│   │   │   ├── integration-wrappers
+│   │   │   │   ├── action-wrapper.ts
+│   │   │   │   ├── channel-wrapper.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── llm
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── openai.ts
+│   │   │   │   ├── schemas.ts
+│   │   │   │   └── types.ts
+│   │   │   ├── run-command
+│   │   │   │   └── index.ts
+│   │   │   ├── speech-to-text
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── openai.ts
+│   │   │   │   ├── schemas.ts
+│   │   │   │   └── types.ts
+│   │   │   └── text-to-image
+│   │   │       ├── index.ts
+│   │   │       ├── schemas.ts
+│   │   │       └── types.ts
+│   │   └── tsconfig.json
+│   ├── sdk
+│   │   ├── build.ts
+│   │   ├── node_modules
+│   │   │   ├── @botpress
+│   │   │   │   └── client -> ../../../client
+│   │   │   ├── @bpinternal
+│   │   │   │   └── zui -> ../../../../node_modules/.pnpm/@bpinternal+zui@0.12.0_react@18.3.1/node_modules/@bpinternal/zui
+│   │   │   ├── esbuild -> ../../../node_modules/.pnpm/esbuild@0.16.17/node_modules/esbuild
+│   │   │   ├── ts-node -> ../../../node_modules/.pnpm/ts-node@10.9.1_@types+node@18.16.16_typescript@4.9.5/node_modules/ts-node
+│   │   │   ├── tsup -> ../../../node_modules/.pnpm/tsup@8.0.2_ts-node@10.9.1_typescript@4.9.5/node_modules/tsup
+│   │   │   ├── @types
+│   │   │   │   └── node -> ../../../../node_modules/.pnpm/@types+node@18.16.16/node_modules/@types/node
+│   │   │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   ├── src
+│   │   │   ├── bot
+│   │   │   │   ├── client
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── types.test.ts
+│   │   │   │   │   └── types.ts
+│   │   │   │   ├── definition.ts
+│   │   │   │   ├── implementation.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── server
+│   │   │   │   │   ├── context.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── types.ts
+│   │   │   │   └── types
+│   │   │   │       ├── common.test.ts
+│   │   │   │       ├── common.ts
+│   │   │   │       ├── generic.ts
+│   │   │   │       └── index.ts
+│   │   │   ├── const.ts
+│   │   │   ├── index.ts
+│   │   │   ├── integration
+│   │   │   │   ├── client
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── types.ts
+│   │   │   │   ├── definition
+│   │   │   │   │   ├── branded-schema.ts
+│   │   │   │   │   ├── generic.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   └── types.ts
+│   │   │   │   ├── implementation.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── server
+│   │   │   │   │   ├── action-metadata.ts
+│   │   │   │   │   ├── context.ts
+│   │   │   │   │   ├── index.ts
+│   │   │   │   │   ├── logger.ts
+│   │   │   │   │   └── types.ts
+│   │   │   │   └── types
+│   │   │   │       ├── common.ts
+│   │   │   │       ├── generic.ts
+│   │   │   │       └── index.ts
+│   │   │   ├── interface
+│   │   │   │   ├── definition.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── log.ts
+│   │   │   ├── message.ts
+│   │   │   ├── package.ts
+│   │   │   ├── retry.ts
+│   │   │   ├── schema.ts
+│   │   │   ├── serve.ts
+│   │   │   ├── utils
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── record-utils.ts
+│   │   │   │   ├── type-utils.test.ts
+│   │   │   │   └── type-utils.ts
+│   │   │   └── zui.ts
+│   │   └── tsconfig.json
+│   └── sdk-addons
+│       ├── node_modules
+│       │   ├── @botpress
+│       │   │   └── sdk -> ../../../sdk
+│       │   ├── @sentry
+│       │   │   └── node -> ../../../../node_modules/.pnpm/@sentry+node@7.53.1/node_modules/@sentry/node
+│       │   └── typescript -> ../../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript
+│       ├── package.json
+│       ├── readme.md
+│       ├── src
+│       │   ├── index.ts
+│       │   └── sentry.ts
+│       └── tsconfig.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── readme.md
+├── Tiltfile
+├── tsconfig.json
+├── turbo.json
+└── vitest.config.ts
